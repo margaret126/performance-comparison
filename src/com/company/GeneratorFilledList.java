@@ -6,14 +6,12 @@ import java.util.LinkedList;
 
 public class GeneratorFilledList {
     private int listSize;
-    private GeneratorStringArray generatorStringArray;
     private GeneratorRandomString generatorRandomString;
     private String[] insertWords;
 
-    public GeneratorFilledList(int listSize, GeneratorStringArray generatorStringArray,
+    public GeneratorFilledList(int listSize,
                                GeneratorRandomString generatorRandomString) {
         this.listSize = listSize;
-        this.generatorStringArray = generatorStringArray;
         this.generatorRandomString = generatorRandomString;
         this.insertWords = generateRandomWords();
     }
